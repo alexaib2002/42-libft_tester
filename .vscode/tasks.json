@@ -1,0 +1,12 @@
+{
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"makefile.launchConfigurations": [
+		{
+			"cwd": "/home/alexaib/Projects/42/42-testers/42-libft_tester",
+			"binaryPath": "/home/alexaib/Projects/42/42-testers/42-libft_tester/binft.bin",
+			"binaryArgs": []
+		}
+	],
+	"C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"
+}

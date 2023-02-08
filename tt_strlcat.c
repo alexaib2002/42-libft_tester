@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tt_main.c                                          :+:      :+:    :+:   */
+/*   tt_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alexaib <alexaib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/04 17:40:25 by aaibar-h          #+#    #+#             */
-/*   Updated: 2023/02/08 21:38:26 by alexaib          ###   ########.fr       */
+/*   Created: 2023/02/08 23:54:34 by aaibar-h          #+#    #+#             */
+/*   Updated: 2023/02/09 00:10:48 by alexaib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_tester.h"
 
-void	tt_bonus(void)
+void	tt_strlcat()
 {
-	tt_general_list();
-	tt_nulled_list();
-	tt_listmap();
-}
+	char		dest[30];
+	const char	*src = "AAAAAAAAA";
+	int			res;
 
-void	tt_common(void)
-{
-	tt_strings();
-}
-
-int	main(void)
-{
-	tt_common();
-	tt_bonus();
-	return (0);
+	memset(dest, 0, 30);
+	memset(dest, 'C', 5);
+	res = ft_strlcat(dest, src, -1);
+	if (res != 14)
+		printf("Unexpected return value\n");
+	if (strcmp(dest, "CCCCCAAAAAAAAA"))
+		printf("Unexpected destination value\n");
 }

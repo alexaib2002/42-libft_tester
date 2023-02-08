@@ -1,0 +1,31 @@
+{
+	"C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+	"makefile.launchConfigurations": [
+		{
+			"cwd": "/home/alexaib/Projects/42/42-testers/42-libft_tester",
+			"binaryPath": "/home/alexaib/Projects/42/42-testers/42-libft_tester/binft.bin",
+			"binaryArgs": []
+		}
+	],
+	"files.associations": {
+		"array": "c",
+		"bitset": "c",
+		"string_view": "c",
+		"initializer_list": "c",
+		"valarray": "c",
+		"__hash_table": "c",
+		"__split_buffer": "c",
+		"__tree": "c",
+		"deque": "c",
+		"list": "c",
+		"map": "c",
+		"queue": "c",
+		"set": "c",
+		"string": "c",
+		"unordered_map": "c",
+		"unordered_set": "c",
+		"vector": "c",
+		"libft_tester.h": "c",
+		"charconv": "c"
+	}
+}
