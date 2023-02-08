@@ -1,31 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tt_main.c                                          :+:      :+:    :+:   */
+/*   tt_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaibar-h <aaibar-h@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/04 17:40:25 by aaibar-h          #+#    #+#             */
-/*   Updated: 2023/02/08 18:18:06 by aaibar-h         ###   ########.fr       */
+/*   Created: 2023/02/08 18:20:00 by aaibar-h          #+#    #+#             */
+/*   Updated: 2023/02/08 18:30:23 by aaibar-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_tester.h"
 
-void	tt_bonus(void)
+void	tt_strlcpy(void)
 {
-	tt_general_list();
-	tt_nulled_list();
-	tt_listmap();
-}
+	const char	*src = "libft";
+	char		*dest;
 
-void	tt_common(void)
-{
-	tt_strings();
-}
-
-int	main(void)
-{
-	tt_bonus();
-	return (0);
+	dest = malloc(10 * sizeof(char));
+	dest = memset(dest, 'A', 10 * sizeof(char));
+	ft_strlcpy(dest, src, -1);
+	free(dest);
 }
