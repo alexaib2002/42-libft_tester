@@ -26,6 +26,9 @@
 		"unordered_set": "c",
 		"vector": "c",
 		"libft_tester.h": "c",
-		"charconv": "c"
+		"charconv": "c",
+		"stdlib.h": "c",
+		"libft.h": "c",
+		"bit": "c"
 	}
 }
