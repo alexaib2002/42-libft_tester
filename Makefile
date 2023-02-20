@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aaibar-h <aaibar-h@student.42madrid.com    +#+  +:+       +#+         #
+#    By: alexaib <alexaib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/06 17:05:24 by aaibar-h          #+#    #+#              #
-#    Updated: 2023/02/08 21:28:34 by aaibar-h         ###   ########.fr        #
+#    Updated: 2023/02/20 08:52:44 by alexaib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ INCLUDE = $(LIBDIR)
 SRCS = $(wildcard tt_*.c)
 OBJS = $(SRCS:.c=.o)
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re $(DEPLIB)
 
 all: $(NAME)
 
